@@ -8,12 +8,6 @@ async function listDatabases(client){
     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
 
-async function createJogador(client, newJogador){
-    const result = await client.db("joguitos").collection("jogador").insertOne(newListing);
-    console.log(`New listing created with the following id: ${result.insertedId}`);
-}
-
-
 async function main(){
     const uri = "mongodb+srv://projetomongo:123321@cluster0.yyvzu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
  
@@ -21,7 +15,9 @@ async function main(){
  
     try {
         await client.connect();
- 
+
+        await client.db("joguitos").dropDatabase();
+
         
         await client.db("joguitos").collection("jogador").insertMany([{
             nome: "daniel",
@@ -31,11 +27,13 @@ async function main(){
             nome: "daniel",
             CPF: "2"
         }]);
-        
 
-        await  listDatabases(client);
-        
- 
+        await client.db("joguitos").collection("time").insertOne(
+            {
+                nome: "Furia",
+                jogadores: ["pegar os ids"]
+            }
+        );
     } catch (e) {
         console.error(e);
     } finally {

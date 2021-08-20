@@ -32,3 +32,11 @@ console.log(db.time.aggregate([
         }
     }
 ]))
+
+console.log(
+    db.jogador.find(
+        {
+            idade: {$gte: 18}
+        }
+    )
+)

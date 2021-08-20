@@ -144,7 +144,68 @@ async function main(){
             funcao: "awp",
             idade:22,
             CPF: "21"
+        },
+        {
+            nome: "anna",
+            funcao: "igl",
+            idade:24,
+            CPF: "22"
+        },
+        {
+            nome: "pan",
+            funcao: "awp",
+            idade:22,
+            CPF: "23"
+        },
+        {
+            nome: "cAmyy",
+            funcao: "lurker",
+            idade:17,
+            CPF: "24"
+        },
+        {
+            nome: "izaa",
+            funcao: "suporte",
+            idade:18,
+            CPF: "25"
+        },
+        {
+            nome: "gabi",
+            funcao: "rifler",
+            idade:22,
+            CPF: "26"
+        },
+        {
+            nome: "elaine",
+            funcao: "rifler",
+            idade:22,
+            CPF: "27"
+        },
+        {
+            nome: "rebeca",
+            funcao: "rifler",
+            idade:22,
+            CPF: "28"
+        },
+        {
+            nome: "lethy",
+            funcao: "rifler",
+            idade:22,
+            CPF: "29"
+        },
+        {
+            nome: "naty",
+            funcao: "rifler",
+            idade:22,
+            CPF: "30"
+        },
+        {
+            nome: "bizinha",
+            funcao: "rifler",
+            idade:22,
+            CPF: "30"
         }
+
 
         ]);
 
@@ -212,10 +273,41 @@ async function main(){
 
         await client.db("joguitos").collection("time").insertOne(
             {
+                nome: "Pain Gaming",
+                pais: "Brasil",
+                participacoes: 6,
+                vitorias: 2,
+                jogadores: [
+                    await client.db("joguitos").collection("jogador").find({nome: "cAmyy"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "izaa"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "pan"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "anna"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "bizinha"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    )
+                ]
+            }
+        );
+
+        await client.db("joguitos").collection("time").insertOne(
+            {
                 nome: "O Plano",
                 pais: "Brasil",
-                participacoes: 120,
-                vitorias: 120,
+                participacoes: 7,
+                vitorias: 5,
                 jogadores: [
                     await client.db("joguitos").collection("jogador").find({nome: "vsm"}).toArray()
                     .then(items => {
@@ -269,6 +361,37 @@ async function main(){
                     return items[0]._id}
                     ),
                     await client.db("joguitos").collection("jogador").find({nome: "Naf"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    )
+                ]
+            }
+        );
+
+        await client.db("joguitos").collection("time").insertOne(
+            {
+                nome: "Rainhas da bala",
+                pais: "Brasil",
+                participacoes: 17,
+                vitorias: 7,
+                jogadores: [
+                    await client.db("joguitos").collection("jogador").find({nome: "gabi"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "rebeca"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "lethy"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "naty"}).toArray()
+                    .then(items => {
+                    return items[0]._id}
+                    ),
+                    await client.db("joguitos").collection("jogador").find({nome: "elaine"}).toArray()
                     .then(items => {
                     return items[0]._id}
                     )
@@ -346,6 +469,41 @@ async function main(){
                     .then(items => {
                     return items[0]._id}),
                     await client.db("joguitos").collection("time").find({nome: "Team Liquid"}).toArray()
+                    .then(items => {
+                    return items[0]._id})
+                ]
+            }
+        );
+
+        await client.db("joguitos").collection("campeonato").insertOne(
+            {
+                Nome: "Campeonato Brasileiro CSGO 2019",
+                dt_inicio: (Date.now() - 86400000),
+                dt_termino: Date.now(),
+                times: [
+                    await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
+                    .then(items => {
+                    return items[0]._id}),
+                    await client.db("joguitos").collection("time").find({nome: "Furia"}).toArray()
+                    .then(items => {
+                    return items[0]._id}),
+                    await client.db("joguitos").collection("time").find({nome: "O Plano"}).toArray()
+                    .then(items => {
+                    return items[0]._id})
+                ]
+            }
+        );
+
+        await client.db("joguitos").collection("campeonato").insertOne(
+            {
+                Nome: "Campeonato Brasileiro Feminino 2020",
+                dt_inicio: (Date.now() - 86400000),
+                dt_termino: Date.now(),
+                times: [
+                    await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
+                    .then(items => {
+                    return items[0]._id}),
+                    await client.db("joguitos").collection("time").find({nome: "Rainhas da bala"}).toArray()
                     .then(items => {
                     return items[0]._id})
                 ]

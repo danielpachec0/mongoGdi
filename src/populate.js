@@ -9,7 +9,7 @@ async function listDatabases(client){
 };
 
 async function main(){
-    const uri = "mongodb+srv://projetomongo:123321@cluster0.yyvzu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = "mongodb+srv://projetomongo:123321@cluster0.yyvzu.mongodb.net/joguitos?retryWrites=true&w=majority";
  
     const client = new MongoClient(uri);
  
@@ -253,7 +253,7 @@ async function main(){
         await client.db("joguitos").collection("campeonato").insertOne(
             {
                 Nome: "MAJOR 2021",
-                dt_inicio: (Date.now() - 259200),
+                dt_inicio: (Date.now() - 259200000),
                 dt_termino: Date.now(),
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()
@@ -272,7 +272,7 @@ async function main(){
         await client.db("joguitos").collection("campeonato").insertOne(
             {
                 Nome: "Campeonato TPM",
-                dt_inicio: (Date.now() - 172800),
+                dt_inicio: (Date.now() - 172800000),
                 dt_termino: Date.now(),
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Team Liquid"}).toArray()
@@ -294,7 +294,7 @@ async function main(){
         await client.db("joguitos").collection("campeonato").insertOne(
             {
                 Nome: "teste",
-                dt_inicio: (Date.now() - 86400),
+                dt_inicio: (Date.now() - 86400000),
                 dt_termino: Date.now(),
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()

@@ -123,7 +123,7 @@ async function main(){
             }
         );
 
-        await client.db("joguitos").collection("Campeonato").insertOne(
+        await client.db("joguitos").collection("campeonato").insertOne(
             {
                 Nome: "teste",
                 dt_inicio: Date.now(),

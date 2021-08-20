@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const Jogador = require('../models/jogador');
 const Time = require('../models/time');
-const Time = require('../models/campeonato');
+const Campeonato = require('../models/campeonato');
+const { $where } = require('../models/jogador');
 
 mongoose.connect(
 'mongodb+srv://projetomongo:123321@cluster0.yyvzu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
@@ -10,7 +11,7 @@ mongoose.connect(
     useUnifiedTopology: true
 });
 
-Time.find({ nome: "Furia" })
+Time.find($where, { nome: "Furia" })
 .exec()
 .then(doc => {
     console.log(doc);
@@ -24,9 +25,3 @@ Time.find().count()
 })
 .catch(err => console.log(err));
 
-Time.find().count()
-.exec()
-.then(doc => {
-    console.log(doc);
-})
-.catch(err => console.log(err));

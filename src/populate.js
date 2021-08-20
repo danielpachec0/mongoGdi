@@ -21,86 +21,128 @@ async function main(){
         
         await client.db("joguitos").collection("jogador").insertMany([{
             nome: "Art",
+            funcao: "awp",
+            idade:22,
             CPF: "1"
         },
         {
             nome: "Yuri",
+            funcao: "awp",
+            idade:22,
             CPF: "2"
         },
         {
             nome: "Vini",
+            funcao: "awp",
+            idade:22,
             CPF: "3"
         },
         {
             nome: "Kacerato",
+            funcao: "awp",
+            idade:22,
             CPF: "4"
         },
         {
             nome: "Honda",
+            funcao: "rifler",
+            idade:17,
             CPF: "5"
         },
         {
             nome: "Stewie",
+            funcao: "awp",
+            idade:22,
             CPF: "6"
         },
         {
             nome: "Fallen",
+            funcao: "awp",
+            idade:22,
             CPF: "7"
         },
         {
             nome: "Naf",
+            funcao: "awp",
+            idade:22,
             CPF: "8"
         },
         {
             nome: "Grim",
+            funcao: "awp",
+            idade:22,
             CPF: "9"
         },
         {
             nome: "Elige",
+            funcao: "awp",
+            idade:22,
             CPF: "10"
         },
         {
             nome: "kNgV-",
+            funcao: "awp",
+            idade:22,
             CPF: "11"
         },
         {
             nome: "HEN1",
+            funcao: "awp",
+            idade:22,
             CPF: "12"
         },
         {
             nome: "LUCAS1",
+            funcao: "awp",
+            idade:22,
             CPF: "13"
         },
         {
             nome: "vsm",
+            funcao: "awp",
+            idade:22,
             CPF: "14"
         },
         {
             nome: "trk",
+            funcao: "awp",
+            idade:22,
             CPF: "15"
         },
         {
             nome: "leo_drk",
+            funcao: "awp",
+            idade:22,
             CPF: "16"
         },
         {
             nome: "TACO",
+            funcao: "awp",
+            idade:22,
             CPF: "17"
         },
         {
             nome: "felps",
+            funcao: "awp",
+            idade:22,
             CPF: "18"
         },
         {
             nome: "latto",
+            funcao: "awp",
+            idade:22,
             CPF: "19"
         },
         {
             nome: "bartin",
+            funcao: "awp",
+            idade:22,
             CPF: "20"
         },
         {
             nome: "dumau",
+            funcao: "awp",
+            idade:22,
             CPF: "21"
         }
 

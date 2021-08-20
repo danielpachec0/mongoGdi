@@ -19,3 +19,16 @@ console.log(db.campeonato.aggregate([
         },
     }
 ]));
+
+
+console.log(db.time.aggregate([
+    {
+        $group: {
+            _id: "$pais",
+
+            total_titulos: {
+                $sum: "$vitorias"
+            }
+        }
+    }
+]))

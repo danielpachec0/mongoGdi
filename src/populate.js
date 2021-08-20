@@ -21,186 +21,217 @@ async function main(){
         
         await client.db("joguitos").collection("jogador").insertMany([{
             nome: "Art",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "1"
         },
         {
             nome: "Yuri",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "2"
         },
         {
             nome: "Vini",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "3"
         },
         {
             nome: "Kacerato",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "4"
         },
         {
             nome: "Honda",
+            pais: "Brasil",
             funcao: "rifler",
             idade:17,
             CPF: "5"
         },
         {
             nome: "Stewie",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "6"
         },
         {
             nome: "Fallen",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "7"
         },
         {
             nome: "Naf",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "8"
         },
         {
             nome: "Grim",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "9"
         },
         {
             nome: "Elige",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "10"
         },
         {
             nome: "kNgV-",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "11"
         },
         {
             nome: "HEN1",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "12"
         },
         {
             nome: "LUCAS1",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "13"
         },
         {
             nome: "vsm",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "14"
         },
         {
             nome: "trk",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "15"
         },
         {
             nome: "leo_drk",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "16"
         },
         {
             nome: "TACO",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "17"
         },
         {
             nome: "felps",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "18"
         },
         {
             nome: "latto",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "19"
         },
         {
             nome: "bartin",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "20"
         },
         {
             nome: "dumau",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "21"
         },
         {
             nome: "anna",
+            pais: "Brasil",
             funcao: "igl",
             idade:24,
             CPF: "22"
         },
         {
             nome: "pan",
+            pais: "Brasil",
             funcao: "awp",
             idade:22,
             CPF: "23"
         },
         {
             nome: "cAmyy",
+            pais: "Brasil",
             funcao: "lurker",
             idade:17,
             CPF: "24"
         },
         {
             nome: "izaa",
+            pais: "Brasil",
             funcao: "suporte",
             idade:18,
             CPF: "25"
         },
         {
             nome: "gabi",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "26"
         },
         {
             nome: "elaine",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "27"
         },
         {
             nome: "rebeca",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "28"
         },
         {
             nome: "lethy",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "29"
         },
         {
             nome: "naty",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "30"
         },
         {
             nome: "bizinha",
+            pais: "Brasil",
             funcao: "rifler",
             idade:22,
             CPF: "30"

@@ -439,6 +439,7 @@ async function main(){
                     {nome: "j1", cpf: "123", idade: 35},
                     {nome: "j2", cpf: "321", idade: 42}
                 ],
+                premiacao: 1000.00,
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Team Liquid"}).toArray()
                     .then(items => {
@@ -459,6 +460,7 @@ async function main(){
                     {nome: "j1", cpf: "123", idade: 35},
                     {nome: "j2", cpf: "321", idade: 42}
                 ],
+                premiacao: 1000000.00,
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()
                     .then(items => {
@@ -508,6 +510,7 @@ async function main(){
                     {nome: "j1", cpf: "123", idade: 35},
                     {nome: "j2", cpf: "321", idade: 42}
                 ],
+                premiacao: 10000.00,
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()
                     .then(items => {
@@ -531,6 +534,7 @@ async function main(){
                     {nome: "j1", cpf: "123", idade: 35},
                     {nome: "j2", cpf: "321", idade: 42}
                 ],
+                premiacao: 1000.00,
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
                     .then(items => {
@@ -554,6 +558,7 @@ async function main(){
                     {nome: "j1", cpf: "123", idade: 35},
                     {nome: "j2", cpf: "321", idade: 42}
                 ],
+                premiacao: 10000.00,
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
                     .then(items => {

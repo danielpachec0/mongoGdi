@@ -136,7 +136,23 @@
 // db.campeonato.createIndex( { Nome:"text"} )
 // console.log(db.campeonato.find( { $text: { $search: "\"Brasileiro\"" } } ));
 
-//campeonatos com 4 jogadores
-console.log(db.campeonato.find({times:{$size: 4}}));
-//times com 1 jogador reserva
-console.log(db.time.find({jogadores:{$size: 6}}));
+// //campeonatos com 4 jogadores
+// console.log(db.campeonato.find({times:{$size: 4}}));
+// //times com 1 jogador reserva
+// console.log(db.time.find({jogadores:{$size: 6}}));
+
+//console.log(db.campeonato.find( { premiacao: { $exists: true}}, {_id:0, juizes: 0, times: 0}));
+
+var mapFunction1 = function() {
+    emit(this.funcao, this.idade);
+};
+
+var reduceFunction1 = function(keyfuncao, idades) {
+    return Array.sum(idades);
+};
+
+db.jogador.mapReduce(
+    mapFunction1,
+    reduceFunction1,
+    { out: "map_reduce_example" }
+)

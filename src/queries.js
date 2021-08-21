@@ -143,16 +143,17 @@
 
 //console.log(db.campeonato.find( { premiacao: { $exists: true}}, {_id:0, juizes: 0, times: 0}));
 
-var mapFunction1 = function() {
-    emit(this.funcao, this.idade);
-};
+//map reduce esta como depracatedclea
+// var mapFunction1 = function() {
+//     emit(this.funcao, this.idade);
+// };
 
-var reduceFunction1 = function(keyfuncao, idades) {
-    return Array.sum(idades);
-};
+// var reduceFunction1 = function(keyfuncao, idades) {
+//     return Array.sum(idades);
+// };
 
-db.jogador.mapReduce(
-    mapFunction1,
-    reduceFunction1,
-    { out: "map_reduce_example" }
-)
+// db.jogador.mapReduce(
+//     mapFunction1,
+//     reduceFunction1,
+//     { out: "map_reduce_example" }
+// )

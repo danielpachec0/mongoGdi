@@ -435,6 +435,10 @@ async function main(){
                 Nome: "teste",
                 dt_inicio: Date.now(),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Team Liquid"}).toArray()
                     .then(items => {
@@ -451,6 +455,10 @@ async function main(){
                 Nome: "MAJOR 2021",
                 dt_inicio: (Date.now() - 259200000),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()
                     .then(items => {
@@ -470,6 +478,10 @@ async function main(){
                 Nome: "Campeonato TPM",
                 dt_inicio: (Date.now() - 172800000),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Team Liquid"}).toArray()
                     .then(items => {
@@ -492,6 +504,10 @@ async function main(){
                 Nome: "teste",
                 dt_inicio: (Date.now() - 86400000),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Godsent"}).toArray()
                     .then(items => {
@@ -511,6 +527,10 @@ async function main(){
                 Nome: "Campeonato Brasileiro CSGO 2019",
                 dt_inicio: (Date.now() - 86400000),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
                     .then(items => {
@@ -530,6 +550,10 @@ async function main(){
                 Nome: "Campeonato Brasileiro Feminino 2020",
                 dt_inicio: (Date.now() - 86400000),
                 dt_termino: Date.now(),
+                juizes:[
+                    {nome: "j1", cpf: "123", idade: 35},
+                    {nome: "j2", cpf: "321", idade: 42}
+                ],
                 times: [
                     await client.db("joguitos").collection("time").find({nome: "Pain Gaming"}).toArray()
                     .then(items => {
